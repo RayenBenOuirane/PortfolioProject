@@ -1,0 +1,11 @@
+.shadow-sm:hover{
+    cursor:default;
+}
+.content{
+    display: flex;
+    align-items: center;  
+    margin-bottom: 10px;
+}
+.item{
+    width: 25%;
+}

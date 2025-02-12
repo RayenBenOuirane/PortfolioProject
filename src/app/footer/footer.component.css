@@ -1,0 +1,83 @@
+/* Footer Styles */
+footer {
+    background-color: #e9ecef; /* Light background color for the footer */
+    color: #212529; /* Text color */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+.fo{
+  margin-left: 10px;
+}
+.fo{
+  display: flex;
+  align-items: center;
+  gap: 45%;
+  margin-bottom: 1rem;
+}
+  
+  footer h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling the social media buttons */
+  footer .btn {
+    font-size: 100%;
+    padding: 5px;
+    margin: 5px;
+ /* Default button color */
+  }
+  
+  footer .btn:hover {
+    opacity: 0.8; /* Slight opacity change on hover */
+  }
+  
+  /* Image size inside buttons */
+  footer .btn img {
+    width: 30px; /* Set width of images */
+    height: 30px; /* Set height of images */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+  }
+  
+  /* Footer Copyright Section */
+  footer .text-center {
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    color: #ddd;
+  }
+  .haha{
+    margin-left: 10%;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer .row {
+      text-align: center;
+        /* Centre verticalement les éléments */
+    }
+  
+    footer .haha {
+      margin-bottom: 2rem; /* Space between columns on smaller screens */
+      margin-left: 20%;
+    }
+  
+    footer .btn {
+      font-size: 1.2rem; /* Slightly smaller icons on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    footer .haha {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    footer .fa-home, .fa-envelope, .fa-phone {
+      font-size: 1.2rem;
+    }
+  }

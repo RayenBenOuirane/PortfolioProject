@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img height="256" width="256" class="rounded-circle" src="Images/defaultprofileimage.png" alt="Image de profile">
+                <p>
+                    Je suis actuellement étudiant à l'École Nationale d'Ingénieurs de Carthage, où je poursuis des études en ingénierie informatique. Motivé et organisé, je m'engage pleinement dans mes projets académiques et personnels. J'ai travaillé sur plusieurs projets en développement logiciel, ce qui m'a permis d'acquérir des compétences solides en programmation, en gestion de projets, et en résolution de problèmes techniques. Mon objectif est de continuer à développer mes connaissances tout en contribuant activement à des projets innovants                </p>
+            </div>
+        </div>
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide> <img src={{picture}} alt="Image 1" style="display: block;width: 100%;"> </slide>
+                </div>
+            </carousel>
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit the portfolio section to learn more</p>
+        </div>
+    </div>
+</div>

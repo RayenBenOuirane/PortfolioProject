@@ -1,0 +1,5 @@
+.btn img {
+    width: 30px; /* Set width of images */
+    height: 30px; /* Set height of images */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+  }

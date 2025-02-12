@@ -1,0 +1,4 @@
+img {
+    width: 180px;  /* L'image occupera 50% de la largeur de son parent */
+    height: 240px;  /* Garder le ratio de l'image */
+  }
