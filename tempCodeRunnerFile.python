@@ -1,0 +1,33 @@
+def EstPositive(L):
+    for i in L:
+        if i < 0:
+            return False
+    return True
+
+def Max4(a, b, c, d):
+    L = [a, b, c, d]
+    return max(L)
+
+def summax(n, L):
+    if n == 1:
+        return L[0]
+    som = sum(L)
+    if EstPositive(L):
+        return som
+    else:
+        L2 = []
+        for i in range(1, n):
+            L2.append(L[i] - L[i-1])
+        return Max4(som, L[0] - L[n-1], L[n-1] - L[0], summax(n-1, L2))
+
+L = []
+t = int(input())
+for i in range(t):
+    n = int(input())
+    estpositive = True
+    L = []
+    for j in range(n):
+        a = int(input())
+        L.append(a)
+    sum = summax(n, L)
+    print(str(sum) + "\n")

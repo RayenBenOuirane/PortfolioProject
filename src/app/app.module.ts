@@ -19,6 +19,13 @@ import { CommonModule } from '@angular/common';
 import { SubscribeComponent } from '../subscribe/subscribe.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel'
 import { ProjectModalComponent } from './project-modal/project-modal.component';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+
+
 
 @NgModule({
   declarations: [
@@ -46,6 +53,10 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
     ProjectCardComponent,
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
+    FormsModule,
+    BrowserAnimationsModule,
+    AccordionModule.forRoot(),
+    CollapseModule.forRoot(),
 ],
   providers: [],
   bootstrap: [AppComponent]

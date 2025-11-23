@@ -1,1 +1,141 @@
-<p>resume works!</p>
+<div class="container text-center" style="margin-top: 20px;margin-bottom: 20px">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group >
+                <button class="btn btn-block justify-content-between d-flex w-100" (click)="isWorkExperienceOpen=!isWorkExperienceOpen;" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color:white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Developper</h2>
+                    <h3 class="text-primary">ABBK Physics Works Company</h3>
+                    <ul>
+                        <li>Learning C# and XAML for the first time</li>
+                        <li>Applying UML diagrams to model the system</li>
+                        <li>Understanding desktop app architecture</li>
+                        <li>Implementing user roles and permissions</li>
+                        <li>Applying principles of software engineering (modularity, readability, documentation) </li>
+                    </ul>
+                    
+                </div>
+            </accordion-group>
+            <accordion-group>
+                <button class="btn btn-block justify-content-between d-flex w-100" (click)="isEducationOpen=!isEducationOpen;" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color:white;">></div>
+                        <div *ngIf="isEducationOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Primary Cycle Of Technology</h2>
+                    <h3 class="text-primary">Institute Of Preparation To Engeneering Studies At Nabeul</h3>
+                    <ul>
+                        <li> Graduate from IPEIN in May 2023</li>
+                        <li> Graduated from the top 10 of my Section (100 students)</li>
+                        <li> Succeded At the National Selection To enter engeenering Schools with rank 77 of 750 student</li>
+                        <li> Having the certificate of ending the 2 years study with Succes</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engeneering</h2>
+                    <h3 class="text-primary">National Engeneering School Of Carthage</h3>
+                    <ul>
+                        <li> I'm in second year</li>
+                        <li> Rang 12 of 100 students</li>
+                        <li> Learning basics of web devellopment,agile methods,Figma,Jira,c++,c,assembly,mathlab,Network... </li>
+                        <li> Integrating two clubs EnglishHub and CME</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group >
+                <button class="btn btn-block justify-content-between d-flex w-100" (click)="isCertificationOpen=!isCertificationOpen;" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationOpen" style="color:white;">></div>
+                        <div *ngIf="isCertificationOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h3>Cisco Certificate Network Associate : Introduction To Network</h3>
+                    <ul>
+                        <li>Obtained January 2025</li>
+                        <li>#98923402389</li>
+                    </ul>
+                    
+                </div>
+            </accordion-group>
+            <accordion-group>
+
+                <button class="btn btn-block justify-content-between d-flex w-100" (click)="isSkillsOpen=!isSkillsOpen;" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color:white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color:white;">v</div>
+                    </div>
+                </button>
+
+                <div class="row" style="text-align : left">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>Assumbly</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>WPF.NET</li>
+                            <li>JavaFX</li>
+                            <li>Spring</li>
+                            <li>Spring Boot</li>
+                            <li>Hibernate</li>
+                            <li>JPA</li>                    
+                            <li>BootStrap</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other Skills:</h3>
+                        <ul>
+                            <li>Agile development</li>
+                            <li>MVC Architecture</li>
+                            <li>Source Control via Git</li>
+                            <li>Cloud Services</li>
+                            <li>SGBD Administrator</li>
+                            <li>Problem Solving</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Data analytics</li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+    
+</div>

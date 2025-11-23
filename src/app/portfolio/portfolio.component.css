@@ -1,36 +1,39 @@
 /* Uniformiser la taille des colonnes et cartes */
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centrer les colonnes si elles ne remplissent pas la rangée */
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer les colonnes si elles ne remplissent pas la rangée */
+}
 
-  
-  .col-lg-4, .col-md-6 {
-    display: flex;
-    justify-content: center; /* Centrage horizontal des cartes */
-  }
-  
-  .card {
-    width: 350px; /* Taille fixe pour toutes les cartes */
-    height: 450px; /* Hauteur uniforme */
-    display: flex;
-    flex-direction: column; /* Organiser le contenu verticalement */
-    justify-content: space-between; /* Équilibrer le contenu */
-  }
-  
-  .card-body {
-    flex-grow: 1; /* Permet au contenu de remplir l'espace disponible */
-  }
-  
-  .card-footer {
-    margin-top: auto; /* Pousse le footer en bas de la carte */
-  }
-  button{
-    height: 50px;
-    width: 70px;
-    margin-left: 20%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: larger;
-  }
+
+.col-lg-4, .col-md-6 {
+  display: flex;
+  justify-content: center; /* Centrage horizontal des cartes */
+}
+
+.card {
+  width: 350px; /* Taille fixe pour toutes les cartes */
+  height: 450px; /* Hauteur uniforme */
+  display: flex;
+  flex-direction: column; /* Organiser le contenu verticalement */
+  justify-content: space-between; /* Équilibrer le contenu */
+}
+
+.card-body {
+  flex-grow: 1; /* Permet au contenu de remplir l'espace disponible */
+}
+
+.card-footer {
+  margin-top: auto; /* Pousse le footer en bas de la carte */
+}
+.btn{
+  height: 50px;
+  width: 70px;
+  margin-left: 1%;
+
+}
+.buttons{
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
