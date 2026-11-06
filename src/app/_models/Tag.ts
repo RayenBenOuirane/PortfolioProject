@@ -72,6 +72,13 @@ export class Tag{
     static readonly CPP = new Tag('C++','darkblue');
 
     static readonly XAML = new Tag('XAML','darkgreen');
+    static readonly MICROSERVICES = new Tag('Microservices', 'purple');
+    static readonly KAFKA = new Tag('Kafka', 'black');
+    static readonly GEMINI = new Tag('Gemini AI', 'blue');
+    static readonly STREAMLIT = new Tag('Streamlit', 'red');
+    static readonly SQLSERVER = new Tag('SQL Server', 'darkred');
+    static readonly UML = new Tag('UML', 'darkblue');
+    static readonly RETROFIT = new Tag('Retrofit', 'green');
 
 
     private constructor(private readonly key: string,public readonly color:string){

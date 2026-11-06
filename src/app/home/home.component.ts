@@ -13,7 +13,7 @@ export class HomeComponent {
   featuredProject = {} as Project // Initialize as an empty array
   constructor(private titleService:Title, private projectsService : ProjectsService){
     this.titleService.setTitle('Rayen Ben Ouirane - Home');
-    this.featuredProject = projectsService.GetProjectsById(1)
+    this.featuredProject = projectsService.GetProjectsById(0)
 
   }
 }
