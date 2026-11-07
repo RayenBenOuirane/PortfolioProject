@@ -12,8 +12,9 @@
 }
 
 .card {
-  width: 350px; /* Taille fixe pour toutes les cartes */
+  width: 100%; /* Taille fixe pour toutes les cartes */
   height: 450px; /* Hauteur uniforme */
+  max-width: 350px;
   display: flex;
   flex-direction: column; /* Organiser le contenu verticalement */
   justify-content: space-between; /* Équilibrer le contenu */
@@ -36,4 +37,15 @@
   margin-left: 20%;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+.filter-panel {
+  max-width: 100%;
+  width: 400px;
+}
+
+.tag-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);   /* 2 colonnes */
+  gap: 0.25rem 1rem;
+  margin-top: 0.25rem;
 }
