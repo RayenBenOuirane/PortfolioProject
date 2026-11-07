@@ -1,39 +1,45 @@
 .jumbotron {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 2rem;
     padding: 2rem 1rem;
     background-color: #e9ecef;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.item {
-    width: 25%;
-}
-
+/* Colonne de la photo : taille de son contenu, ne rétrécit pas */
 .item:first-child {
-    margin-right: 5rem;
-    margin-left: 5rem;
+    flex: 0 0 auto;
+    margin: 0 2rem 0 4rem;
 }
 
+/* Colonne du texte : prend tout l'espace restant */
 .item:last-child {
-    flex-grow: 1;
+    flex: 1 1 0;
+    min-width: 0;                 /* empêche le texte de déborder */
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
+/* Le composant Angular est inline par défaut, il faut le rendre block */
 .app-profile-image {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;          /* cercle parfait */
     border-radius: 50%;
+    overflow: hidden;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+/* ====== Mobile / tablette : photo AU-DESSUS du nom ====== */
+@media (max-width: 992px) {
     .jumbotron {
         flex-direction: column;
+        align-items: center;
+        gap: 1rem;
         text-align: center;
     }
 
@@ -41,12 +47,16 @@
     .item:first-child,
     .item:last-child {
         width: 100%;
-        margin: 0 0 1rem 0;
+        margin: 0;
     }
 
     .item:first-child {
         display: flex;
         justify-content: center;
+    }
+
+    .app-profile-image {
+        width: 150px;
     }
 
     .display-4 {

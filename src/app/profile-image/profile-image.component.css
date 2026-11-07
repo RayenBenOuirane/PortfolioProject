@@ -1,20 +1,29 @@
+/* Le composant Angular est inline par défaut : on le rend block */
+:host {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+}
+
 .profile-wrapper {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .profile-img {
-    width: 180px;
-    max-width: 100%;       /* ne dépasse jamais son parent */
-    aspect-ratio: 3 / 4;   /* même proportion que 180x240 */
+    display: block;
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    object-fit: cover;     /* recadre au lieu de déformer */
-    border-radius: 50%;    /* à retirer si tu veux une photo rectangulaire */
+    aspect-ratio: 1 / 1;      /* cercle parfait (3 / 4 donnait une ellipse) */
+    object-fit: cover;        /* recadre au lieu de déformer */
+    border-radius: 50%;       /* à retirer pour une photo rectangulaire */
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-    .profile-img {
+    :host {
         width: 140px;
     }
 }
